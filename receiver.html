@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr" dir="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easy Pocket Money</title>
+    <script>
+      function initMap() {
+        var uluru = {lat: 49.00061, lng: 2.417178};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <style>
+    #map {
+     height: 500px;
+     width: 100%;
+    }
+    </style>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    </head>
+  <body>
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>EPM <span class="text-color">APP</span></h1>
+            <p>Transfert d'argent rapide</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!------------------------------- Début projet epm ---------------------------------->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <a href="index.html" class="btn btn-primary btn-lg btn-block">ACCUEIL</a>
+            <a href="sender.html" class="btn btn-primary btn-lg btn-block">ENVOYER</a>
+            </div>
+    </div>
+     <br>
+    <div class="row">
+        <div class="col-mdr-12">
+            <h2>Demande confirmée</h2>
+            <p id="moneyAsk">Montant reçu:</p>
+            <p id="code">Votre code:</p>
+            <h3>DAB le plus proche</h3>
+            <div id="map"></div>
+        </div>
+    </div>
+</div>
+<!------------------------------- Fin projet epm ---------------------------------->
+<section id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Easy Pocket Money</h2>
+      <p>Un service de CRAZY BANK</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>&copy; EPM APP | Tout droits réservés</p>
+      </div>
+    </div>
+  </div>
+</footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmQoedrqKDU2GDc16LQ_r2u0GjCtpCGaQ&callback=initMap">
+    </script>
+  </body>
+</html>

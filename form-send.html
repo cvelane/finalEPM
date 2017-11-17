@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr" dir="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easy Pocket Money</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    </head>
+  <body onload="rand()">
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>EPM <span class="text-color">APP</span></h1>
+            <p>Transfert d'argent rapide!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!------------------------------- Début projet epm ---------------------------------->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+          <a href="index.html" class="btn btn-primary btn-lg btn-block">ACCUEIL</a>
+        </div>
+    </div>
+     <br>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Votre service</h2>
+            <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="PhoneParent" type="text" class="form-control" placeholder="Tel: Ex. +336">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-euro"></i></span>
+            <input id="MoneyParent" type="input-group-addon" class="form-control" placeholder="">
+          </div><br>
+          <div class="input-group">
+            <span class="input-group-addon"></span>
+            <input id="RandomCode" type="input-group-addon" class="form-control" placeholder="" disabled>
+          </div><br>
+          </div>
+          <div class="col-md-12">
+            <button id="Confirm" type="button" class="btn btn-primary btn-lg">Confirmer!</button><br><br>
+          </div>
+          <div class="HidenTel">Div Hiden Tel</div>
+          <div id="geo">Div Hiden Geo</div>
+          <script>
+          function rand(min, max, integer)
+          {
+            if (!integer)
+            {
+              return Math.random() * (max - min) + min;
+            }
+            else
+            {
+              return Math.floor(Math.random() * (max - min + 1) + min);
+            }
+            document.getElementById("RandomCode").innerHTML.value = rand(integer);
+          }
+          </script>
+        </div>
+    </div>
+</div>
+<!------------------------------- Fin projet epm ---------------------------------->
+<section id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Easy Pocket Money</h2>
+      <p>Un service de CRAZY BANK</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>&copy; EPM APP | All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

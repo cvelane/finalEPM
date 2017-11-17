@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr" dir="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Easy Pocket Money</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    </head>
+  <body>
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>EPM <span class="text-color">APP</span></h1>
+            <p>Slogan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!------------------------------- début projet epm ---------------------------------->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <a href="index.html" class="btn btn-primary btn-lg btn-block">HOME</a>                   
+            <a href="form-receiver.html" class="btn btn-primary btn-lg btn-block">RECEVOIR</a>
+        </div>
+
+    </div>
+     <br>
+    <div class="row">
+        <div class="col-md-12">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="phoneParent" type="text" class="form-control" placeholder="Tel: Ex. +336">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-euro"></i></span>
+            <input id="moneyChild" type="input-group-addon" class="form-control" placeholder="">
+          </div><br>
+          <div class="col-md-12">
+            <button id="ask" type="button" class="btn btn-primary btn-lg" onclick="askChild()">Envoyer!</button><br><br>
+          </div>
+           <div id="messageChild"></div>
+           <h3>Clients de la Crazy Bank </h3>
+          <div id="users"></div>
+          <h3>Personnes autorisées</h3>
+          <div id="auths"></div>
+        </div>
+    </div>
+</div>
+<!------------------------------- fin projet epm ---------------------------------->
+<section id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Easy Pocket Money</h2>
+      <p>Un service de CRAZY BANK</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>&copy; EPM APP | All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Source CDN firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<!-- Import firebase -->
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCfaNyCji15JXlpG0tx5X-GgdQJVkrL1RE",
+    authDomain: "epm-db.firebaseapp.com",
+    databaseURL: "https://epm-db.firebaseio.com",
+    projectId: "epm-db",
+    storageBucket: "",
+    messagingSenderId: "65615447"
+  };
+  firebase.initializeApp(config);
+</script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/form-receive.js"></script>
+  </body>
+</html>
